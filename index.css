@@ -122,10 +122,7 @@ body {
     display: none;
 }
 .through-line {
-    border-bottom: 2px solid black;
-    position: absolute;
-    top:22.5rem;
-    width:100%;
+    display: none;
 }
 .container {
     border-top-left-radius: 20px;
@@ -155,10 +152,10 @@ body {
 }
 .container .fa-people-carry {
     display: none;
-    font-size: 3rem;
+    font-size: 2.5rem;
     position: absolute;
     top:1rem;
-    left:1rem;
+    left:0.5rem;
     color:gold;
 }
 .fa-people-carry {
@@ -198,7 +195,7 @@ body {
     width: 100%;
 }
 .game-input::placeholder {
-    font-size: 1rem;
+    font-size: 1.1rem;
 }
 .game-btn {
     border:none;
@@ -300,7 +297,11 @@ body {
     .game-level {
         font-size: 2.5rem;
     }
-    .game-input::placeholder {
-        font-size: 1.1rem;
+    .through-line {
+        display: block;
+        border-bottom: 2px solid black;
+        position: absolute;
+        top:20rem;
+        width:100%;
     }
 }
