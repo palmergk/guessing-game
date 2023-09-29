@@ -1,0 +1,299 @@
+body {
+    background-color: whitesmoke;
+    overflow-x: hidden;
+    margin: 0;
+    padding: 0;
+}
+* {
+    font-family: tahoma;
+}
+.game-title-head {
+    text-align: center;
+    font-size: 2rem;
+    text-transform: uppercase;
+    font-family: electrical;
+    color:rgb(182, 182, 48);
+}
+.game-title-sub {
+    font-size: 1.2rem;
+    color:silver;
+    text-transform: lowercase;
+    text-align: center;
+    color: white;
+    text-shadow: -1px 1px 3px rgb(63, 61, 61);
+}
+.web-loaders {
+    position: relative;
+    width: 50%;
+    margin: 0 auto;
+    margin-top: 9rem;
+}
+.web-loader-head {
+    height: 10rem;
+    width: 10rem;
+    border-top: 4px solid rgb(243, 167, 26);
+    border-bottom: 4px solid silver;
+    border-left: 4px solid transparent;
+    border-right: 4px solid rgb(243, 167, 26);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    animation: webloader 0.6s linear infinite;
+}
+@keyframes webloader {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+.web-loader-sub {
+    height: 7rem;
+    width: 7rem;
+    border-top: 4px solid rgb(116, 43, 116);
+    border-bottom: 4px solid silver;
+    border-left: 4px solid rgb(116, 43, 116);
+    border-right: 4px solid transparent;
+    border-radius: 50%;
+    animation: webloadersub 0.6s linear infinite;
+    position: absolute;
+    top: 10.5%;
+    left:13%;
+}
+@keyframes webloadersub {
+    0% {
+        transform: rotate(-0deg);
+    }
+    100% {
+        transform: rotate(-360deg);
+    }
+}
+.web-loader-text {
+    font-size: 1.2rem;
+    text-transform: capitalize;
+    position: absolute;
+    color: silver;
+    top:30.5%;
+    left:25%;
+}
+.web-loader-boxes {
+    display: flex;
+    gap:1rem;
+    margin-top: 1rem;
+    margin-left: 2rem;
+}
+.web-loader-box {
+    height: 1.5rem;
+    width:1.5rem;
+    border-radius: 50%;
+    border:1px solid black;
+}
+.wl-lasttxt {
+    font-size: 1rem;
+    margin-top:0.5rem;
+    margin-left:2.8rem;
+}
+.body {
+    display: none;
+}
+.game-main-txthead {
+    text-align: center;
+    font-size: 2rem;
+    text-transform: uppercase;
+    color: white;
+    text-shadow: -1px 1px 3px rgb(63, 61, 61);
+}
+.game-main-txthead i {
+    font-size: 1.2rem;
+    color: gold;
+}
+.game-part {
+    margin-top: 3.5rem;
+}
+.toggle-on-off {
+    display: flex;
+    font-size: 2rem;
+    margin-left: 90%;
+    cursor: pointer;
+}
+.toggle-on-off .fa-toggle-on {
+    display: none;
+}
+.through-line {
+    border-bottom: 2px solid black;
+    position: absolute;
+    top:22.5rem;
+    width:100%;
+}
+.container {
+    border-top-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    border-top-right-radius: 5px;
+    border-bottom-left-radius: 5px;
+    width: 90%;
+    max-width: 32rem;
+    height: 22rem;
+    margin: 5% auto;
+    padding-top:1rem;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    box-shadow: -5px 8px 10px lightgrey;
+    position: relative;
+}
+.container .fa-universal-access {
+    font-size: 3rem;
+    position: absolute;
+    top:1rem;
+    left:1rem;
+    transform: rotate(-30deg);
+    color:gold;
+}
+.container .fa-people-carry {
+    display: none;
+    font-size: 3rem;
+    position: absolute;
+    top:1rem;
+    left:1rem;
+    color:gold;
+}
+.fa-people-carry {
+    display: none;
+}
+.game-level {
+    font-size: 2.2rem;
+    text-transform: uppercase;
+    margin-top: -5rem;
+    padding-bottom: 0.5rem;
+    color: gold;
+    text-shadow: -1px 1px 3px rgb(173, 151, 23);
+}
+.container2 {
+    border: 1px solid rgb(223, 152, 165);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height:12rem;
+    width:15rem;
+    border-bottom-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+.game-number {
+    font-size: 3rem;
+    font-weight: 500;
+    color:rgb(18, 59, 59);
+    padding-top: 0.5rem;
+}
+.game-input {
+    padding: 0.5rem 1rem;
+    font-size: 1.1rem;
+    outline:none;
+    margin-top: 1.3rem;
+    border:2px solid rgb(18, 59, 59);
+    display: none;
+}
+.game-btn {
+    border:none;
+    background-color: rgb(24, 24, 92);
+    border-radius: 999px;
+    padding: 1rem 2rem;
+    font-size: 1.2rem;
+    color:white;
+    text-transform: capitalize;
+    cursor: pointer;
+    margin-top:2rem;
+}
+.error{
+    color: red;
+    text-transform: capitalize;
+    font-size: 0.8rem;
+}
+.failed {
+    color:red;
+    text-align: center;
+}
+.pass {
+    color: green;
+    text-align: center;
+}
+.startbutton, .restartbutton, .startagain {
+    display: none;
+}
+.startagain {
+    background-color: rgb(230, 45, 45);
+}
+.movebutton {
+    display: none;
+    background-color: rgb(243, 167, 26);
+}
+.start-count-button {
+    background-color: rgb(66, 17, 66);
+}
+.trial {
+    padding-top: 1rem;
+    font-size: 1.1rem;
+}
+.game-number2 {
+    display: none;
+    font-size: 3rem;
+    font-weight: 500;
+    color:rgb(18, 59, 59);
+    padding-top: 0.5rem;
+}
+.start-count-button-two {
+    display: none;
+    background-color: rgb(66, 17, 66);
+}
+.back-button {
+    display: none;
+    background-color: rgb(230, 45, 45);
+}
+.movebutton-two {
+    display: none;
+    background-color: rgb(243, 167, 26);
+}
+.restartbutton-two, .startbutton-two {
+    display: none;
+}
+
+@media screen and (min-width:992px) {
+    .web-loaders {
+        width: 10%;
+        margin: 0 auto;
+        margin-top: 11rem;
+    }
+    .web-loader-sub {
+        top: 10.5%;
+        left:17%;
+    }
+    .web-loader-text {
+        left:32%;
+        top:30%;
+    }
+    .web-loader-box {
+        height: 1.5rem;
+        width:2.5rem;
+    }
+    .wl-lasttxt {
+        font-size: 1.1rem;
+    }
+    .game-part {
+        margin-top: 0rem;
+    }
+    .container {
+        width:100%;
+    }
+    .container .fa-universal-access {
+        font-size: 4rem;
+    }
+    .container .fa-people-carry {
+        font-size: 3rem;
+    }
+    .game-level {
+        font-size: 2.5rem;
+    }
+}

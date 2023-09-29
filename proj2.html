@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guessing Game</title>
+    <link rel="stylesheet" href="./proj2.css">
+    <link rel="stylesheet" href="../fontawesome/css/all.min.css">
+</head>
+
+<body>
+    <div class="game-title">
+        <div class="game-title-head">lucky guesser</div>
+        <div class="game-title-sub">...our favorite number guessing game</div>
+    </div>
+    <div class="web-loaders">
+        <div class="web-loader-head">
+        </div>
+        <div class="web-loader-sub"></div>
+        <div class="web-loader-text"><span class="wlt1">loa</span><span class="wlt2">ding</span><span
+                class="wlt3">...</span></div>
+        <div class="web-loader-boxes">
+            <div class="web-loader-box box1"></div>
+            <div class="web-loader-box box2"></div>
+            <div class="web-loader-box box3"></div>
+        </div>
+        <div class="wl-lasttxt">Please wait</div>
+    </div>
+    <div class="body">
+        <div class="game-main-txthead"><i class="fas fa-smile"></i> Pass all levels and win big
+            <i class="fas fa-box    "></i>
+        </div>
+        <div class="game-part">
+            <div class="toggle-on-off">
+                <i class="fas fa-toggle-on"></i>
+                <i class="fas fa-toggle-off"></i>
+            </div>
+            <div class="through-line"></div>
+            <div class="container">
+                <i class="fas fa-universal-access"></i>
+                <i class="fas fa-people-carry "></i>
+                <div class="game-level">level one</div>
+                <div class="container2">
+                    <div class="game-number">?</div>
+                    <div class="game-number2">?</div>
+                    <div class="result"></div>
+                    <input type="text" class="game-input" placeholder="Guess the number (0-10)">
+                    <div class="error"></div>
+                    <div class="level-one-buttons">
+                        <button class=" game-btn start-count-button">start count</button>
+                        <button class="game-btn startbutton">check guess</button>
+                        <button class="game-btn restartbutton">guess again</button>
+                        <button class="game-btn startagain">load more points</button>
+                        <button class="game-btn movebutton">move to level two</button>
+                    </div>
+                    <div class="level-two-buttons">
+                        <button class="game-btn start-count-button-two">start count</button>
+                        <button class="game-btn startbutton-two">check guess</button>
+                        <button class="game-btn restartbutton-two">guess again</button>
+                        <button class="game-btn back-button">back to level one</button>
+                        <button class="game-btn movebutton-two">move to level three</button>
+
+                    </div>
+                    <div class="trial"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <script src="./proj2.js"></script>
+</body>
+
+</html>
