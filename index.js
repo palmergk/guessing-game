@@ -62,6 +62,7 @@ let gameLevel = document.querySelector('.game-level')
 let levelOneIcon = document.querySelector('.fa-universal-access')
 let levelTwoIcon = document.querySelector('.fa-people-carry')
 let gameText2 = document.querySelector('.game-number2')
+let levelPOintsShower = document.querySelector('.level-points-shower')
 let count = 0
 let countLimit = 20
 let outcome = ''
@@ -180,6 +181,7 @@ moveButton.addEventListener('click', () => {
     levelOneIcon.style.display = 'none'
     levelTwoIcon.style.display = 'block'
     gameLevel.innerHTML = 'level two'
+    levelPOintsShower.innerHTML = '50 points to level three'
 
 })
 
@@ -281,6 +283,7 @@ backOneButton.addEventListener('click', () => {
     levelOneIcon.style.display = 'block'
     levelTwoIcon.style.display = 'none'
     gameLevel.innerHTML = 'level one'
+    levelPOintsShower.innerHTML = '30 points to level two'
 })
 
 //toggle on and off
